@@ -4,20 +4,22 @@
 }
 
 .Header {
-  padding-top: 3vh;
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+  padding: 11px;
   height: 7vh;
-  background-color: rgb(29, 30, 32);
+  background-color: rgb(29, 30, 32); 
   color: aliceblue;
   text-align: center;
 }
 .General {
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
 }
 
 .App-header {
   height: 85vh;
-  background-color: #282c34;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -59,4 +61,57 @@
 
 .img:hover {
   filter: opacity(0.8);
+}
+.iconMenu {
+  display:none;
+}
+
+.lamparita2{
+  position: fixed;
+  bottom: 10px;
+  left: 3px;
+  border: 0ch;
+}
+
+.lamparita{
+  width: 30px;
+  height: 25px;
+  padding: 8px;
+  position: fixed;
+  bottom: 10px;
+  left: 4px;
+  border: 0ch;
+  color: yellow;
+  background-color: gray;
+  border-radius: 50px;
+}
+ /* Responsive 
+ 480px Maxima de celulares (600)
+ 481 - 768 tablet
+ 769-1200px Monitores*/ 
+ 
+@media screen and (max-width: 768px) {
+
+  .App-header {
+    flex-direction: column;
+  height: 100%;
+  }
+  .Footer{
+  height: unset;
+  padding: 15px;
+  }
+  .Header{
+  height: unset;
+  padding-bottom: 15px;
+  }
+
+  .iconMenu {
+    display:unset;
+    width: 30px;
+    height: 25px;
+  }
+
+  .Titulo{
+  display: none;
+  }
 }
